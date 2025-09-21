@@ -17,8 +17,18 @@ class QueryController( private val queryService: QueryService) {
     }
 
     @GetMapping
-    fun listAllQueries(): List<SavedQuery> = queryService.getAllQueries()
+    fun listAllQueries(): List<SavedQuery> {
 
+        return queryService.getAllQueries()
+
+    }
+
+    @GetMapping("/execute")
+    fun executeQuery(@RequestParam query: Long): List<List<Any?>> {
+
+        return queryService.executeQuery(query)
+
+    }
 
 
 }
