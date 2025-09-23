@@ -45,6 +45,9 @@ git clone https://github.com/Masood2000/backend-main-analytics-dashboard.git
 cd backend-main-analytics-dashboard
 ./gradlew bootRun
 
+---
+
+---
 **### Assumptions**
 
 - **Dataset is static**: The analytic data does not change frequently (or at all), which allows caching of query results.  
