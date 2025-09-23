@@ -89,7 +89,7 @@ The focus is on handling **long-running queries** with Kotlin **coroutines**, wh
 
 ---
 
-# 📡 API Endpoints & Postman Testing
+#API Endpoints & Postman Testing
 
 You can test all endpoints using **Postman** or any API client. Make sure the application is running at:
 
@@ -108,8 +108,9 @@ SELECT * FROM passengers;
 **Response:**
 ```json
 { "id": 1 }
+---
 
-### List All Queries (GET /queries)
+## List All Queries (GET /queries)
 URL: http://localhost:8080/queries
 
 Method: GET
