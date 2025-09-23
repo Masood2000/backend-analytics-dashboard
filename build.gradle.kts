@@ -33,6 +33,10 @@ dependencies {
     //dependencies for csv file handling and h2 database.
     implementation("com.opencsv:opencsv:5.7.1")
     runtimeOnly("com.h2database:h2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("io.projectreactor:reactor-core:3.5.13")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.7.3")
+
 
 }
 
