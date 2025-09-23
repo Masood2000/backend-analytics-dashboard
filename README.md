@@ -41,7 +41,7 @@ The focus is on handling **long-running queries** with Kotlin **coroutines**, wh
 
 
 ---
-**### Assumptions**
+## Assumptions
 
 - **Dataset is static**: The analytic data does not change frequently (or at all), which allows caching of query results.  
 - **Read-only queries**: Only `SELECT` queries are allowed; all modification statements are forbidden.  
@@ -50,18 +50,18 @@ The focus is on handling **long-running queries** with Kotlin **coroutines**, wh
 
 ---
 
-**### Design Decisions**
+## Design Decisions
 
-**### a) Query Storage**
+### a) Query Storage
 - Saved queries are stored in a **JPA repository** (`SavedQueryRepository`) with fields for `id` and `queryText`.  
 - This allows users to save, list, and execute queries consistently.
 
-**### b) Safe Query Execution**
+### b) Safe Query Execution
 - Only `SELECT` queries are allowed.  
 - A list of forbidden keywords (`INSERT`, `UPDATE`, `DELETE`, `DROP`, `ALTER`, etc.) is checked before saving a query.  
 - Execution is done via **JdbcTemplate**, mapping each row to a list of objects.
 
-**### c) Coroutine-based Execution**
+### c) Coroutine-based Execution
 - Implemented **Approach 1** using Kotlin coroutines:  
   - Controller methods are `suspend` functions.  
   - `executeQuery` in the service uses `withContext(Dispatchers.IO)` to run queries safely on the I/O dispatcher.  
@@ -69,7 +69,7 @@ The focus is on handling **long-running queries** with Kotlin **coroutines**, wh
 
 ---
 
-**### Limitations**
+## Limitations
 
 - **Blocking for large queries**: Approach 1 blocks the client until query execution completes. This is fine for moderate datasets but may not scale for very large datasets.  
 - **In-memory cache**: Cached results are lost on server restart.  
@@ -78,7 +78,7 @@ The focus is on handling **long-running queries** with Kotlin **coroutines**, wh
 
 ---
 
-**### Possible Improvements
+## Possible Improvements
 **
 - Implement **Approach 2 **:  
   - Start queries in background coroutines.  
