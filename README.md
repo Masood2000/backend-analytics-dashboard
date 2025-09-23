@@ -37,15 +37,8 @@ The focus is on handling **long-running queries** with Kotlin **coroutines**, wh
 
 ### Requirements
 - Java 17+  
-- Gradle (wrapper included)  
+- Gradle (wrapper included)
 
-### Run locally
-```bash
-git clone https://github.com/Masood2000/backend-main-analytics-dashboard.git
-cd backend-main-analytics-dashboard
-./gradlew bootRun
-
----
 
 ---
 **### Assumptions**
@@ -95,3 +88,13 @@ cd backend-main-analytics-dashboard
 
 
 ---
+
+
+### Run locally
+```bash
+git clone https://github.com/Masood2000/backend-main-analytics-dashboard.git
+cd backend-main-analytics-dashboard
+./gradlew bootRun
+
+---
+
