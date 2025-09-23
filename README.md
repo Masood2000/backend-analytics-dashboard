@@ -42,6 +42,6 @@ The focus is on handling **long-running queries** with Kotlin **coroutines**, wh
 
 ### Run locally
 ```bash
-git clone https://github.com/<your-username>/backend-main-analytics-dashboard.git
+git clone https://github.com/Masood2000/backend-main-analytics-dashboard.git
 cd backend-main-analytics-dashboard
 ./gradlew bootRun
