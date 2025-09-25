@@ -48,7 +48,6 @@ class QueryService( private val repository: SavedQueryRepository, private val jd
             val data = mutableListOf<List<Any?>>()
             val resultSet = jdbcTemplate.queryForRowSet(savedQuery.queryText)
 
-            delay(10000)
             while (resultSet.next()) {
                 val row = mutableListOf<Any?>()
                 for (i in 1..resultSet.metaData.columnCount) {
@@ -64,4 +63,17 @@ class QueryService( private val repository: SavedQueryRepository, private val jd
             QueryResult(status = "FAILED", error = ex.message)
         }
     }
+
+
+    fun executeQueryAsync(id:Long, jobId:String){
+        TODO()
+    }
+
+    fun getJobStatus(jobId: String) {
+        TODO()
+    }
+    fun getJobResults(jobId: String) {
+        TODO()
+    }
+
 }
