@@ -5,6 +5,8 @@ It allows saving SQL queries, listing them, and executing them safely against a 
 
 The focus is on handling **long-running queries** with Kotlin **coroutines**, while ensuring security by only allowing safe `SELECT` statements.  
 
+Please refer to word document "assignment_solution" for more details.
+
 
 ---
 
