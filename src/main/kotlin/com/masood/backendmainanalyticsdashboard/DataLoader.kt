@@ -13,10 +13,6 @@ import java.io.InputStreamReader
  * csv file contents...
  */
 
-
-
-
-
 @Component
 class DataLoader(private val passengerRepository: PassengerRepository) : CommandLineRunner {
 
