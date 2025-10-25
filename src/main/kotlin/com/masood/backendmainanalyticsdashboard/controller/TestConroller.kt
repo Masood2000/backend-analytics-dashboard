@@ -8,7 +8,7 @@ class TestConroller {
 
     @GetMapping("/test")
     fun hello(): String {
-        return "Hello, Spring Boot with Kotlin & H2!"
+        return "Hello, Spring Boot with Kotlin & H2! waqas bhai "
     }
 
 }

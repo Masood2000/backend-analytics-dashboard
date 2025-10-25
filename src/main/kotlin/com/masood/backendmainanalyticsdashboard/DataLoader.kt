@@ -13,6 +13,10 @@ import java.io.InputStreamReader
  * csv file contents...
  */
 
+
+
+
+
 @Component
 class DataLoader(private val passengerRepository: PassengerRepository) : CommandLineRunner {
 
@@ -57,3 +61,7 @@ class DataLoader(private val passengerRepository: PassengerRepository) : Command
         println("Titanic data loaded successfully!")
     }
 }
+
+
+
+
