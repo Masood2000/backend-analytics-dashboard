@@ -7,10 +7,6 @@ import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Component
 import java.io.InputStreamReader
 
-
-
-
-
 /***
  * Data loader class to initially fill the h2 database with the
  * csv file contents...
