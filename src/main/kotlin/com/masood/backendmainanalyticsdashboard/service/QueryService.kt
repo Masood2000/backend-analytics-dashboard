@@ -11,12 +11,6 @@ import org.springframework.stereotype.Service
 import java.util.concurrent.ConcurrentHashMap
 
 
-
-
-
-
-
-
 @Service
 class QueryService( private val repository: SavedQueryRepository, private val jdbcTemplate: JdbcTemplate) {
 
@@ -26,7 +20,6 @@ class QueryService( private val repository: SavedQueryRepository, private val jd
     private val results = ConcurrentHashMap<Long, QueryResult>()
 
     fun saveQuery(query: String): Long {
-
 
         val lowered = query.lowercase()
         if (!lowered.startsWith("select")) {
