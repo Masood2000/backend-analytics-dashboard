@@ -3,7 +3,6 @@ package com.masood.backendmainanalyticsdashboard
 import com.masood.backendmainanalyticsdashboard.controller.QueryController
 import com.masood.backendmainanalyticsdashboard.model.SavedQuery
 import com.masood.backendmainanalyticsdashboard.service.QueryService
-
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Assertions.*
