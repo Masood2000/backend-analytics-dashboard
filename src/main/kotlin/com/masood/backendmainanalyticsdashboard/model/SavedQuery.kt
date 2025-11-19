@@ -2,6 +2,8 @@ package com.masood.backendmainanalyticsdashboard.model
 
 import jakarta.persistence.*
 
+
+
 @Entity
 data class SavedQuery(
     @Id
