@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service
 import java.util.concurrent.ConcurrentHashMap
 
 
+
+
 @Service
 class QueryService( private val repository: SavedQueryRepository, private val jdbcTemplate: JdbcTemplate) {
 
