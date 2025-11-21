@@ -5,6 +5,8 @@ public class PaymentProcessor {
 
     public PaymentProcessor() {
 
+        System.out.println("Payment Processor Initialized");
+
     }
 
 }
