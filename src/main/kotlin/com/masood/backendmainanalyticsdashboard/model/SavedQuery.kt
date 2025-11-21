@@ -4,6 +4,9 @@ import jakarta.persistence.*
 
 
 
+
+
+
 @Entity
 data class SavedQuery(
     @Id
