@@ -7,10 +7,6 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class BackendMainAnalyticsDashboardApplication
 
-
-
-
-
 fun main(args: Array<String>) {
     runApplication<BackendMainAnalyticsDashboardApplication>(*args)
 }
