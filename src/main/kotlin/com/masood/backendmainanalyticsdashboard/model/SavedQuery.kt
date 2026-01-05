@@ -10,4 +10,3 @@ data class SavedQuery(
 
     val queryText: String = ""
 )
-
