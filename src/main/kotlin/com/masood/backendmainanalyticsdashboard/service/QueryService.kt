@@ -1,8 +1,5 @@
 package com.masood.backendmainanalyticsdashboard.service
 
-
-
-
 import com.masood.backendmainanalyticsdashboard.events.QueryResult
 import com.masood.backendmainanalyticsdashboard.model.SavedQuery
 import com.masood.backendmainanalyticsdashboard.repository.SavedQueryRepository
@@ -11,8 +8,6 @@ import kotlinx.coroutines.withContext
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.stereotype.Service
 import java.util.concurrent.ConcurrentHashMap
-
-
 
 
 @Service
